@@ -7,5 +7,6 @@
  */
 int main(void)
 {
+	$CFILE="0-main.c"
     return (0);
 }    
