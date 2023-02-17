@@ -10,13 +10,14 @@
 
 int main(void)
 {
-	int x;
+	char c;
 
-	for (int x = 'A'; x <= 'Z'; x++)
-	{
-		int lower_x = tolower(x);
-
-		putchar(lower_x);
-	}
+	c = 'a';
+	while
+		(c <= 'z') {
+			putchar(c);
+			c++;
+		}
+	putchar('\n');
 	return (0);
 }
