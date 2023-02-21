@@ -4,11 +4,12 @@
  *Return: 0 (success)
  */
 
-/**This is a function to print the alphabets*/
 void print_alphabet(void)
+/**a function to print alphabets*/
 {
 
 	char c;
+
 	for (c = 'a'; c <= 'z'; c++)
 	{
 	_putchar(c);
