@@ -1,28 +1,33 @@
 #include <stdio.h>
 
 /**
- * main - Print combination of single numbers
- *
- * Return: Always 0
+ * main - starting (entry) point of the program
+ * printf - write the string to standard output
+ * Description: Prints all possible different combinations
+ * -  of two digits followed by a new line
+ * Return: returns (0) for success
  */
 
 int main(void)
 {
-	int x, b;
+		int x;
+		int b;
 
-	for (x = 0; x < 9; x++)
-	{
-		for (b = 0; b <= 9; b++)
+		for (x = 0; x <= 8; x++)
 		{
-			if (!((x == b) || (x > b)))
+			for (b = x + 1; b <= 9; b++)
 			{
 				putchar(x + '0');
 				putchar(b + '0');
+			if (x != 8 || b != 9)
+			{
 				putchar(',');
 				putchar(' ');
 			}
+			}
 		}
-	}
-	putchar('\n');
-	return (0);
+		putchar('\n');
+		return (0);
+
 }
+
